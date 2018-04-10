@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clipToPadding="false"
+    >
+
+
+    <LinearLayout
+        android:id="@+id/depo_sayim_linear"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:minHeight="150dp"
+        android:layout_margin="10dp"
+        android:background="@color/colorPrimary"
+        android:elevation="7dp"
+        android:weightSum="3"
+        android:padding="2dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="1dp"
+            android:orientation="vertical"
+            android:weightSum="3">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="#f7f7f7"
+                android:gravity="center"
+                android:layout_marginBottom="1dp"
+                android:text="Depo Adı"
+                android:textColor="#000000"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/depo_adi"
+                android:layout_width="match_parent"
+                android:background="#f7f7f7"
+                android:layout_height="1dp"
+                android:layout_weight="2"
+                android:layout_gravity="center"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="3"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#f7f7f7"
+                android:layout_weight="1"
+                android:layout_marginBottom="1dp"
+                android:gravity="center"
+                android:text="Tarih"
+                android:textColor="#000000"
+                android:textSize="17dp"
+                android:textStyle="bold"
+                android:layout_gravity="center" />
+
+        <TextView
+            android:id="@+id/sayim_tarih"
+            android:layout_width="match_parent"
+            android:background="#f7f7f7"
+            android:layout_height="1dp"
+            android:layout_weight="2"
+            android:layout_gravity="center"
+            android:gravity="center"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="3"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:gravity="center"
+                android:background="#f7f7f7"
+                android:layout_weight="1"
+                android:layout_marginBottom="1dp"
+                android:text="Açıklama"
+                android:textColor="#000000"
+                android:textSize="17dp"
+                android:textStyle="bold"
+                android:layout_gravity="center" />
+
+        <TextView
+            android:id="@+id/sayim_ack"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#f7f7f7"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

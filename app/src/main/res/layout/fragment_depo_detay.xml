@@ -1,0 +1,133 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.nejat.evobulut.Fragments.DepoDetay">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="5dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Depo Adı"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:textSize="27dp"/>
+
+        <Spinner
+            android:id="@+id/depo_detay_depo_adi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textColor="@color/cardview_dark_background"
+            android:background="@android:color/transparent"
+            android:padding="7dp"/>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/colorPrimary"
+            />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="5dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tarih"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:textSize="27dp"/>
+        <EditText
+            android:id="@+id/depo_detay_depo_tarih"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:textSize="20dp"
+            android:focusable="false"
+            android:padding="7dp"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/colorPrimary"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="5dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Açıklama"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:textSize="27dp"/>
+        <EditText
+            android:id="@+id/depa_detay_depo_ack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:textSize="20dp"
+            android:padding="7dp"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/colorPrimary"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="center"
+        android:weightSum="2">
+        <Button
+            android:id="@+id/depo_update"
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Guncelle"
+            android:textColor="#f7f7f7"
+            android:textSize="18dp"
+            android:background="@color/colorPrimary"/>
+        <Button
+            android:id="@+id/depo_delete"
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:background="#7A211D"
+            android:text="Sil"
+            android:textColor="#f7f7f7"
+            android:textSize="18dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+
+</LinearLayout>

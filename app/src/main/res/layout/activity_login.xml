@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7F7F7"
+    tools:context="com.nejat.evobulut.Aktiviteler.LoginEkrani"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="9">
+
+        <ImageView
+            android:id="@+id/loginbg"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:src="@drawable/bglatest"
+            android:scaleType="fitStart"
+            android:paddingRight="50dp"
+            android:layout_weight="8"/>
+
+    </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/linearUser"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:orientation="vertical"
+                    android:elevation="20dp"
+                    android:background="#F7F7F7"
+                    android:layout_centerInParent="true">
+
+
+
+                <EditText
+                    android:id="@+id/user_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:layout_margin="15dp"
+                    android:hint="Kullanıcı Adı"
+                    android:background="@android:color/transparent"
+                    android:layout_above="@+id/password"
+                    android:ems="20"
+                    />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/lightgray"/>
+
+                <EditText
+                    android:id="@+id/password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:background="@android:color/transparent"
+                    android:gravity="left"
+                    android:inputType="textPassword"
+                    android:hint="Sifre"
+                    android:ems="20"
+                    />
+                </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="50dp"
+            android:orientation="vertical"
+            android:layout_below="@+id/linearUser"
+            android:elevation="7dp"
+
+            android:background="@drawable/buttongradientcolor">
+
+            <TextView
+                android:id="@+id/login_textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:background="@android:color/transparent"
+                android:text="Giris Yap"
+                android:onClick="onClick"
+                android:gravity="center"
+                android:ems="20"
+                />
+
+
+        </LinearLayout>
+
+    <android.support.v7.widget.AppCompatCheckBox
+        android:id="@+id/login_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sifreyi hatirlat?"
+        android:background="@android:color/transparent"
+        android:textColor="#aa000000"
+        android:buttonTint="#aa000000"
+        android:clickable="true"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/linearButton"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"/>
+
+
+</RelativeLayout>

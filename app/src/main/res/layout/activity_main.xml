@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="#e0e0e0">
+
+   <android.support.design.widget.AppBarLayout
+       android:layout_width="match_parent"
+       android:layout_height="160dp"
+       android:fitsSystemWindows="true">
+       <android.support.design.widget.CollapsingToolbarLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           app:title="Kullanici Adi"
+           android:background="#e0e0e0"
+           app:layout_scrollFlags="scroll|exitUntilCollapsed"
+           app:expandedTitleGravity="center"
+           >
+
+           <ImageView
+
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:scaleType="fitXY"
+               android:src="@drawable/background"
+               android:tint="@color/colorPrimaryDark"/>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:orientation="vertical"
+               android:gravity="center">
+
+               <de.hdodenhof.circleimageview.CircleImageView
+                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                   android:id="@+id/profilepic"
+                   android:layout_width="96dp"
+                   android:layout_height="96dp"
+                   android:src="@mipmap/ic_launcher"
+                   app:civ_border_width="2dp"
+                   app:civ_border_color="#e0e0e0"/>
+
+
+               <TextView
+                   android:id="@+id/mainKullaniAdi"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Kullanici Adi"
+                   android:layout_margin="5dp"
+                   android:textSize="19sp"
+                   app:layout_collapseMode="pin"
+                   android:textColor="#000"/>
+
+           </LinearLayout>
+
+
+       </android.support.design.widget.CollapsingToolbarLayout>
+       
+   </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/nested_view"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/main_recycler_view">
+
+        </android.support.v7.widget.RecyclerView>
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+</android.support.design.widget.CoordinatorLayout>
+

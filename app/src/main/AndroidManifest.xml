@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.nejat.evobulut">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA"/>
+
+    <application
+        android:name=".klaslar.Kullanici"
+        android:windowSoftInputMode="adjustPan"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Aktiviteler.MainActivity" />
+        <activity android:name=".Aktiviteler.StoklariCek" />
+        <activity android:name=".Aktiviteler.StoklariGonder" />
+        <activity android:name=".Aktiviteler.SayimMasterListOut" />
+        <activity android:name=".Aktiviteler.LoginEkrani">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Aktiviteler.Saymaster" />
+        <activity android:name=".Aktiviteler.SayimDetay" />
+        <activity android:name=".Aktiviteler.SayimDetayListOut"
+            android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:name=".Aktiviteler.StokEkle"></activity>
+    </application>
+
+</manifest>
